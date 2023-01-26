@@ -12,9 +12,11 @@ static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
+static const char col_gray4[]       = "#222222";
+//static const char col_gray4[]       = "#eeeeee";
 //static const char col_bar[]        = "#005577";
-static const char col_border[]      = "#A3A3A8";
+//static const char col_border[]      = "#A3A3A8";
+static const char col_border[]      = "#8abeb7";
 static const char col_bar[]   	 		= "#8abeb7";
 
 static const char *colors[][3]      = {
