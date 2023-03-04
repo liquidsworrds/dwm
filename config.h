@@ -22,10 +22,31 @@ static const char col_gray4[]       = "#222222";
 static const char col_border[]      = "#eeeeee";
 static const char col_bar[]   	    = "#8abeb7";
 
-static const char *colors[][3]      = {
+/*static const char *colors[][3]      = {*/
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	/*[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_bar,  col_border  },
+};*/
+#include "colors/rose-pine.h"
+static const char *colors[][3]  = {
+  /*                     fg   bg   border */
+  [SchemeNorm]       = { fg1, bg0, fg2 },
+  [SchemeSel]        = { bg1, rose, rose },
+  [SchemeTag]        = { bg0, bg1, bg0 },
+  [SchemeTag1]       = { rose, bg0,  bg1 },
+  [SchemeTag2]       = { red, bg0, bg1 },
+  [SchemeTag3]       = { yel, bg0, bg1 },
+  [SchemeTag4]       = { blu, bg0, bg1 },
+  [SchemeTag5]       = { purple, bg0, bg1 },
+  [SchemeTag6]       = { cyan, bg0, bg1 },
+  [SchemeLayout]     = { rose, bg0, bg1 },
+  [SchemeTitle]      = { fg0, bg0, bg1 },
+  [SchemeTitle1]     = { rose, bg0, bg1 },
+  [SchemeTitle2]     = { red, bg0, bg1 },
+  [SchemeTitle3]     = { yel, bg0, bg1 },
+  [SchemeTitle4]     = { blu, bg0, bg1 },
+  [SchemeTitle5]     = { purple, bg0, bg1 },
+  [SchemeTitle6]     = { cyan, bg0, bg1 },
 };
 
 /* tagging */
