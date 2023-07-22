@@ -15,7 +15,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=14", "JetBrainsMono Nerd Font:style=Regular:size=12" };
 static const char dmenufont[]       = "monospace:size=14";
 
-#include "/home/bzty/.cache/wal/colors-wal-dwm.h"
+//#include "/home/adi/.cache/wal/colors-wal-dwm.h"
+#include "colors/monochrome.h"
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
