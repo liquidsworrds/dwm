@@ -6,14 +6,15 @@ static const unsigned int gappx	    = 8;        /* gap pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;    /* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 4;   /* systray spacing */
+static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int swallowfloating    = 1;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode Nerd Font:style=Regular:size=12", "FontAwesome:style=Regular:size=12" };
-static const char dmenufont[]       = "FiraCode Nerd Font:style=Regular:size=12";
+// static const char *fonts[]          = { "FiraCode Nerd Font:style=Regular:size=12", "FontAwesome 6 Free:style=Regular:size=14" };
+static const char *fonts[]          = { "SF Mono:style=Medium:size=12", "Iosevka Nerd Font:size=12" };
+static const char dmenufont[]       = "SF Mono:style=Medium:size=12";
 
 //#include "/home/$USER/.cache/wal/colors-wal-dwm.h"
 #include "colors/monochrome.h"
@@ -59,7 +60,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg, "-sf", sel_fg, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, NULL }; //"-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "librewolf", NULL };
 
